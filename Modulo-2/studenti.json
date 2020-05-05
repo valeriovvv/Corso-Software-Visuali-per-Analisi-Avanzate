@@ -1,0 +1,33 @@
+{
+   "Studenti":[
+      {
+         "Nome":"Antonio",
+         "cognome":"Rossi",
+         "matricola":"0013424324",
+         "esami":[
+            {
+               "Esame":"Statistica",
+               "Data":"10/01/2020",
+               "Voto":30
+            }
+         ]
+      },
+      {
+         "Nome":"Marco",
+         "cognome":"Verdi",
+         "matricola":"0013425655",
+         "esami":[
+            {
+               "Esame":"Statistica",
+               "Data":"10/01/2020",
+               "Voto":29
+            },
+			{
+               "Esame":"Economia",
+               "Data":"12/11/2020",
+               "Voto":28
+            }
+         ]
+      }
+   ]
+}
