@@ -23,28 +23,6 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
---
--- Struttura della tabella `impiegati`
---
-
-CREATE TABLE `impiegati` (
-  `matricola` varchar(10) NOT NULL,
-  `cognome` varchar(20) NOT NULL,
-  `filiale` varchar(20) NOT NULL,
-  `stipendio` decimal(10,0) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dump dei dati per la tabella `impiegati`
---
-
-INSERT INTO `impiegati` (`matricola`, `cognome`, `filiale`, `stipendio`) VALUES
-('5698', 'Rossi', 'Roma', '64'),
-('5998', 'Neri', 'Milano', '64'),
-('7309', 'Neri', 'Napoli', '35'),
-('9553', 'Rossi', 'Roma', '44');
-
--- --------------------------------------------------------
 
 --
 -- Struttura della tabella `maternita`
@@ -120,12 +98,6 @@ INSERT INTO `persone` (`nome`, `eta`, `reddito`, `ID`) VALUES
 --
 -- Indici per le tabelle scaricate
 --
-
---
--- Indici per le tabelle `impiegati`
---
-ALTER TABLE `impiegati`
-  ADD PRIMARY KEY (`matricola`);
 
 --
 -- Indici per le tabelle `persone`
