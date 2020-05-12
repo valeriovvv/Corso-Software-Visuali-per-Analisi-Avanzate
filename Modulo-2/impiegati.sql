@@ -31,22 +31,19 @@ CREATE TABLE `impiegati` (
   `matricola` varchar(10) NOT NULL,
   `cognome` varchar(20) NOT NULL,
   `filiale` varchar(20) NOT NULL,
-  `stipendio` decimal(10,0) NOT NULL
+  `stipendio` decimal(10,0) NOT NULL,
+  `eta` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dump dei dati per la tabella `impiegati`
 --
 
-INSERT INTO `impiegati` (`matricola`, `cognome`, `filiale`, `stipendio`) VALUES
-('5698', 'Rossi', 'Roma', '64'),
-('5998', 'Neri', 'Milano', '64'),
-('7309', 'Neri', 'Napoli', '35'),
-('9553', 'Rossi', 'Roma', '44');
-
---
--- Indici per le tabelle scaricate
---
+INSERT INTO `impiegati` (`matricola`, `cognome`, `filiale`, `stipendio`, `eta`) VALUES
+('5698', 'Rossi', 'Roma', '64', NULL),
+('5998', 'Neri', 'Milano', '64', 39),
+('7309', 'Neri', 'Napoli', '35', 27),
+('9553', 'Rossi', 'Roma', '44', 25);
 
 --
 -- Indici per le tabelle `impiegati`
